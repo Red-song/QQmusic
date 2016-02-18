@@ -3,12 +3,12 @@ window.onload=function(){
       var audio=document.querySelector("audio");
       var playerbar=document.querySelector(".player_bar");
        var yinyueku=[
-        {name:"Capo Productions",src:"Capo Productions-Journey.mp3",singer:"Journey",duration:"02:57"},
-        {name:"不可说",src:"不可说.mp3",singer:"霍建华",duration:"03:42"},
-        {name:"Richard Clayderman-星空(吉他 独奏 钢琴曲)",src:"Richard Clayderman-星空(吉他 独奏 钢琴曲).mp3",singer:"Janna",duration:"05:52"},
-        {name:"钢琴-钢琴曲(明月千里寄相思)",src:"钢琴-钢琴曲(明月千里寄相思).mp3",singer:"Simisex",duration:"02:17"},
-        {name:"天使在人间",src:"羽·泉-天使在人间.mp3",singer:"羽泉",duration:"03:36"},
-        {name:"Spring",src:"张一益-Spring.mp3",singer:"张一益",duration:"03:02"}
+        {img:"images/1.jpg",name:"Capo Productions",src:"music/Capo Productions-Journey.mp3",singer:"Journey",duration:"02:57"},
+        {img:"images/2.jpg",name:"不可说",src:"music/不可说.mp3",singer:"霍建华",duration:"03:42"},
+        {img:"images/3.jpg",name:"Richard Clayderman-星空(吉他 独奏 钢琴曲)",src:"music/Richard Clayderman-星空(吉他 独奏 钢琴曲).mp3",singer:"Janna",duration:"05:52"},
+        {img:"images/4.jpg",name:"钢琴-钢琴曲(明月千里寄相思)",src:"music/钢琴-钢琴曲(明月千里寄相思).mp3",singer:"Simisex",duration:"02:17"},
+        {img:"images/5.jpg",name:"天使在人间",src:"music/羽·泉-天使在人间.mp3",singer:"羽泉",duration:"03:36"},
+        {img:"images/6.jpg",name:"Spring",src:"music/张一益-Spring.mp3",singer:"张一益",duration:"03:02"}
       ]
          var currentsongindex;//记录歌曲下标
          var LIEBIAO=3,SHUNXU=2,DANQU=1,SUIJI=4;
@@ -113,6 +113,7 @@ window.onload=function(){
                 document.querySelector(".singer_name").innerHTML=yinyueku[currentsongindex].singer;
                 document.querySelector(".play_date").innerHTML=yinyueku[currentsongindex].duration;
                 document.querySelector(".music_op").style.display="block";
+                music_info_img.src=yinyueku[currentsongindex].img;
        }
 
         
